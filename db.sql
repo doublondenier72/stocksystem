@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `config` (
   KEY `Index 1` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
--- Listage des données de la table stocksystem.config : ~2 rows (environ)
+-- Listage des données de la table stocksystem.config : ~3 rows (environ)
 /*!40000 ALTER TABLE `config` DISABLE KEYS */;
 REPLACE INTO `config` (`id`, `rulename`, `rule`) VALUES
 	(1, 'stock_pneus', '1'),
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `stock_lights` (
   KEY `Index 1` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
--- Listage des données de la table stocksystem.stock_lights : ~0 rows (environ)
+-- Listage des données de la table stocksystem.stock_lights : ~2 rows (environ)
 /*!40000 ALTER TABLE `stock_lights` DISABLE KEYS */;
 REPLACE INTO `stock_lights` (`id`, `ref`, `quant`) VALUES
 	(1, 'Ampoules PHILIPS 12V 55W H7 Longlife', '4'),
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `stock_pneus` (
   KEY `Index 1` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
 
--- Listage des données de la table stocksystem.stock_pneus : ~22 rows (environ)
+-- Listage des données de la table stocksystem.stock_pneus : ~23 rows (environ)
 /*!40000 ALTER TABLE `stock_pneus` DISABLE KEYS */;
 REPLACE INTO `stock_pneus` (`id`, `ref`, `saison`, `marque`, `quant`) VALUES
 	(23, 'Agilis Alpin 255 65 16C 112/110R', 'Hiver', 'Michelin', 4),
@@ -91,11 +91,12 @@ CREATE TABLE IF NOT EXISTS `users` (
   KEY `Index 1` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
--- Listage des données de la table stocksystem.users : ~3 rows (environ)
+-- Listage des données de la table stocksystem.users : ~2 rows (environ)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 REPLACE INTO `users` (`id`, `name`, `surname`, `username`, `role`, `password`) VALUES
 	(5, 'Marino', 'Musitelli', 'Musi73', '0', '900dd813637f0b75f7360ac8d5a413a7'),
-	(1, 'Ilhann', 'Musitelli', 'Doublondenier72', '3', 'ea4d5a4a8019184a5211884e64d9ff44');
+	(1, 'Ilhann', 'Musitelli', 'Doublondenier72', '3', 'ea4d5a4a8019184a5211884e64d9ff44'),
+	(6, 'admin', 'admin', 'admin', '3', '21232f297a57a5a743894a0e4a801fc3');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
