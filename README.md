@@ -6,4 +6,4 @@ C'est un système de gestion de stockage prévu pour les garages et gérer leurs
 ## Comment se connecter ?
 Vous devez vous connecter en faisant 
 Utilisateur | admin
-MDO | admin
+MDP | admin
