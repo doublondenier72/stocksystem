@@ -4,7 +4,7 @@
     private $host    = '127.0.0.1';   // nom de l'host
     private $name    = 'stocksystem';     // nom de la base de donnée
     private $user    = 'root';        // utilisateur
-    private $pass    = '';        // mot de passe
+    private $pass    = 'vanille1';        // mot de passe
     //private $pass    = '';          // Ne rien mettre si on est sous windows
     private $connexion;
                     
